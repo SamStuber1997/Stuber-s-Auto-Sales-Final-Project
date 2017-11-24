@@ -88,12 +88,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheapestVehicle.Designer.vb">
-      <DependentUpon>CheapestVehicle.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CheapestVehicle.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="DealerDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -163,9 +157,6 @@
     <Compile Include="Vehicle.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CheapestVehicle.resx">
-      <DependentUpon>CheapestVehicle.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmAddVehicle.resx">
       <DependentUpon>FrmAddVehicle.vb</DependentUpon>
     </EmbeddedResource>

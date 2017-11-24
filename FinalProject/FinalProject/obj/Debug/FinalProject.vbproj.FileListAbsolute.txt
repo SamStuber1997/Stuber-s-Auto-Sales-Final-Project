@@ -136,3 +136,23 @@ C:\Users\Sam Stuber\Desktop\Final-Project-for-advanced-vb--master\FinalProject\F
 C:\Users\Sam Stuber\Desktop\Final-Project-for-advanced-vb--master\FinalProject\FinalProject\obj\Debug\FinalProject.xml
 C:\Users\Sam Stuber\Desktop\Final-Project-for-advanced-vb--master\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
 C:\Users\Sam Stuber\Desktop\Final-Project-for-advanced-vb--master\FinalProject\FinalProject\obj\Debug\FinalProject.CheapestVehicle.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\bin\Debug\DreamVehicles.mdf
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\bin\Debug\DreamVehicles_log.ldf
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\bin\Debug\FinalProject.xml
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.vbprojResolveAssemblyReference.cache
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.FrmAddVehicle.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.FrmDealerStatus.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.FrmInventory.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.FrmRemoveVehicle.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.FrmSellVehicle.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.FrmSoldVehicles.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.MainForm.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.Resources.resources
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.vbproj.GenerateResource.Cache
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.vbproj.CoreCompileInputs.cache
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.xml
+C:\Users\Sam Stuber\Desktop\Stuber's Auto Sales Final Project\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
