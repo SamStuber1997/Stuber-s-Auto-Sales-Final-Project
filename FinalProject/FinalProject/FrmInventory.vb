@@ -20,7 +20,7 @@ Public Class FrmInventory
 
         Dim frmSellVehicle As New FrmSellVehicle
         frmSellVehicle.StockNumber = StockNumber
-		' frmSellVehicle.ShowDialog()
+		frmSellVehicle.ShowDialog()
 
 	End Sub
 
