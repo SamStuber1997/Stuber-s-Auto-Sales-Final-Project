@@ -30,31 +30,30 @@ Public Class Vehicle
         Return table
     End Function
 
-    Public Function Insert(pStockNumber As Integer, pYear As Integer,
-                           pMake As String, pModel As String, pTrim As String,
-                           pColor As String, pDriveTrain As String, pMiles As Integer,
-                           pTMV As Decimal, pPrice As Decimal, pArrivalDate As DateTime) As Boolean
+	Public Function Insert(pYear As Integer,
+						   pMake As String, pModel As String, pTrim As String,
+						   pColor As String, pDriveTrain As String, pMiles As Integer,
+						   pTMV As Decimal, pPrice As Decimal, pArrivalDate As DateTime) As Boolean
 
-        Dim Result As Boolean = False
-        Try
+		Dim Result As Boolean = False
+		Try
 
-            If adapter.Insert(pStockNumber, pYear, pMake, pModel, pTrim, pColor, pDriveTrain,
-                          pTMV, pPrice, pArrivalDate) > 0 Then
-                LastStatus = "Vehicle added Successfully"
-                Result = True
-            Else
-                LastStatus = "Error adding vehicle"
-            End If
+			If adapter.Insert(pYear, pMake, pModel, pTrim, pColor, pDriveTrain, pMiles, pTMV, pPrice, pArrivalDate) > 0 Then
+				LastStatus = "Vehicle added Successfully"
+				Result = True
+			Else
+				LastStatus = "Error adding vehicle"
+			End If
 
-        Catch ex As Exception
-            LastStatus = "Exception thrown while adding vehicle"
+		Catch ex As Exception
+			LastStatus = "Exception thrown while adding vehicle"
 
-        End Try
+		End Try
 
-        Return Result
-    End Function
+		Return Result
+	End Function
 
-    Public Function GetSumOfValue()
+	Public Function GetSumOfValue()
 
         Return adapter.CalcDealerValue()
 

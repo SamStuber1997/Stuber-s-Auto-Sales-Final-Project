@@ -23,13 +23,11 @@ Partial Class FrmAddVehicle
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
 		Me.components = New System.ComponentModel.Container()
-		Me.txtStockNum = New System.Windows.Forms.TextBox()
 		Me.txtYear = New System.Windows.Forms.TextBox()
 		Me.txtMake = New System.Windows.Forms.TextBox()
 		Me.txtModel = New System.Windows.Forms.TextBox()
 		Me.txtColor = New System.Windows.Forms.TextBox()
 		Me.txtMileage = New System.Windows.Forms.TextBox()
-		Me.Label1 = New System.Windows.Forms.Label()
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.Label4 = New System.Windows.Forms.Label()
@@ -54,14 +52,6 @@ Partial Class FrmAddVehicle
 		Me.StatusStrip1.SuspendLayout()
 		CType(Me.errProvider, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
-		'
-		'txtStockNum
-		'
-		Me.txtStockNum.Location = New System.Drawing.Point(183, 32)
-		Me.txtStockNum.MaxLength = 2
-		Me.txtStockNum.Name = "txtStockNum"
-		Me.txtStockNum.Size = New System.Drawing.Size(100, 20)
-		Me.txtStockNum.TabIndex = 0
 		'
 		'txtYear
 		'
@@ -98,16 +88,6 @@ Partial Class FrmAddVehicle
 		Me.txtMileage.Name = "txtMileage"
 		Me.txtMileage.Size = New System.Drawing.Size(100, 20)
 		Me.txtMileage.TabIndex = 5
-		'
-		'Label1
-		'
-		Me.Label1.AutoSize = True
-		Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label1.Location = New System.Drawing.Point(41, 30)
-		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(114, 20)
-		Me.Label1.TabIndex = 7
-		Me.Label1.Text = "Stock Number:"
 		'
 		'Label2
 		'
@@ -320,13 +300,11 @@ Partial Class FrmAddVehicle
 		Me.Controls.Add(Me.Label4)
 		Me.Controls.Add(Me.Label3)
 		Me.Controls.Add(Me.Label2)
-		Me.Controls.Add(Me.Label1)
 		Me.Controls.Add(Me.txtMileage)
 		Me.Controls.Add(Me.txtColor)
 		Me.Controls.Add(Me.txtModel)
 		Me.Controls.Add(Me.txtMake)
 		Me.Controls.Add(Me.txtYear)
-		Me.Controls.Add(Me.txtStockNum)
 		Me.Name = "FrmAddVehicle"
 		Me.Text = "Add Vehicle"
 		Me.StatusStrip1.ResumeLayout(False)
@@ -336,16 +314,13 @@ Partial Class FrmAddVehicle
 		Me.PerformLayout()
 
 	End Sub
-
-	Friend WithEvents txtStockNum As TextBox
-    Friend WithEvents txtYear As TextBox
-    Friend WithEvents txtMake As TextBox
-    Friend WithEvents txtModel As TextBox
-    Friend WithEvents txtColor As TextBox
-    Friend WithEvents txtMileage As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+	Friend WithEvents txtYear As TextBox
+	Friend WithEvents txtMake As TextBox
+	Friend WithEvents txtModel As TextBox
+	Friend WithEvents txtColor As TextBox
+	Friend WithEvents txtMileage As TextBox
+	Friend WithEvents Label2 As Label
+	Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txtTrim As TextBox

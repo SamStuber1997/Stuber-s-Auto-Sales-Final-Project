@@ -16,11 +16,14 @@ Public Class FrmInventory
     End Sub
 
     Private Sub btnSell_Click(sender As Object, e As EventArgs) Handles btnSell.Click
-        Dim StockNumber As Integer = CInt(txtStockNum.Text)
+		If dgvInventory.SelectedRows.Count > 0 Then
+			Dim id As Integer = CShort(dgvInventory.SelectedRows(0).Cells(0).Value)
+			Dim frmSellVehicle As New FrmSellVehicle
+			frmSellVehicle.StockNumber = id
+			frmSellVehicle.ShowDialog()
 
-        Dim frmSellVehicle As New FrmSellVehicle
-        frmSellVehicle.StockNumber = StockNumber
-		frmSellVehicle.ShowDialog()
+		End If
+
 
 	End Sub
 

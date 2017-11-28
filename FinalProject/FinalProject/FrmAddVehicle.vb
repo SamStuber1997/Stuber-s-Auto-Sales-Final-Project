@@ -28,52 +28,46 @@ Public Class FrmAddVehicle
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
-        If txtStockNum.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
 
-        ElseIf txtTMV.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf txtPrice.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf txtYear.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf txtMake.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf txtModel.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf txtTrim.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf txtColor.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf cboDrivetrain.SelectedIndex = -1 Then
-            MessageBox.Show("All text boxes must be filled")
-        ElseIf txtMileage.Text = "" Then
-            MessageBox.Show("All text boxes must be filled")
+		If txtTMV.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf txtPrice.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf txtYear.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf txtMake.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf txtModel.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf txtTrim.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf txtColor.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf cboDrivetrain.SelectedIndex = -1 Then
+			MessageBox.Show("All text boxes must be filled")
+		ElseIf txtMileage.Text = "" Then
+			MessageBox.Show("All text boxes must be filled")
+		End If
 
-            Exit Sub
 
-        End If
 
-        txtStockNum.Focus()
-
-        lblStatus.Text = ""
-
-        If cboDrivetrain.SelectedIndex = -1 Then
+		If cboDrivetrain.SelectedIndex = -1 Then
             errProvider.SetError(cboDrivetrain, "Nothing is selected")
         End If
 
 
 
-        If mVehicle.Insert(CInt(txtStockNum.Text), CInt(txtYear.Text),
-                           txtMake.Text, txtModel.Text, txtTrim.Text, txtColor.Text,
-                           cboDrivetrain.Text, CInt(txtMileage.Text),
-                              CDec(txtTMV.Text), CDec(txtPrice.Text), dtpArrival.Value) Then
+		If mVehicle.Insert(CInt(txtYear.Text),
+						   txtMake.Text, txtModel.Text, txtTrim.Text, txtColor.Text,
+						   cboDrivetrain.Text, CInt(txtMileage.Text),
+							  CDec(txtTMV.Text), CDec(txtPrice.Text), dtpArrival.Value) Then
 
 
 
-        End If
-        lblStatus.Text = mVehicle.LastStatus
-    End Sub
+
+			lblStatus.Text = mVehicle.LastStatus
+		End If
+	End Sub
 
     Private Sub txtYear_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtYear.KeyPress
         errProvider.Clear()
@@ -91,22 +85,22 @@ Public Class FrmAddVehicle
 
     End Sub
 
-    Private Sub txtStockNum_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtStockNum.KeyPress
-        errProvider.Clear()
+	Private Sub txtStockNum_KeyPress(sender As Object, e As KeyPressEventArgs)
+		errProvider.Clear()
 
 
-        If e.KeyChar = vbBack Then
-            Exit Sub
-        End If
+		If e.KeyChar = vbBack Then
+			Exit Sub
+		End If
 
-        If Not Char.IsDigit(e.KeyChar) Then
-            e.Handled = True
+		If Not Char.IsDigit(e.KeyChar) Then
+			e.Handled = True
 
-            errProvider.SetError(txtStockNum, "Enter digits only")
-        End If
-    End Sub
 
-    Private Sub txtTMV_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTMV.KeyPress
+		End If
+	End Sub
+
+	Private Sub txtTMV_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTMV.KeyPress
         errProvider.Clear()
 
 

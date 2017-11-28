@@ -30,14 +30,14 @@ Public Class FrmRemoveVehicle
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
+		If dgvInventory.SelectedRows.Count > 0 Then
+			Dim ID As Integer = CShort(dgvInventory.SelectedRows(0).Cells(0).Value)
 
-
-
-        If (mVehicle.Delete(CInt(txtStockNum.Text))) Then
-            dgvInventory.DataSource = mVehicle.Items()
-        End If
-
-        lblStatus.Text = mVehicle.LastStatus
+			If (mVehicle.Delete(ID)) Then
+				dgvInventory.DataSource = mVehicle.Items()
+			End If
+		End If
+		lblStatus.Text = mVehicle.LastStatus
     End Sub
 
 End Class
