@@ -20,7 +20,7 @@ Public Class FrmInventory
 			Dim id As Integer = CShort(dgvInventory.SelectedRows(0).Cells(0).Value)
 			Dim frmSellVehicle As New FrmSellVehicle
 			frmSellVehicle.StockNumber = id
-			frmSellVehicle.ShowDialog()
+			'frmSellVehicle.ShowDialog()
 
 		End If
 
